@@ -5,21 +5,21 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
-    <Button
+    <FrameLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Click Me"
-        android:id="@+id/btn"/>
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/btn"
-        android:text="Go Back To Home Page"
-        android:id="@+id/home_page"/>
-    <WebView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/home_page"
-        android:id="@+id/webView"/>
+        android:layout_height="match_parent">
+        <WebView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/webView"/>
+        <ImageView
+            android:visibility="visible"
+            android:id="@+id/button_start_stop_voice_session"
+            android:layout_width="125dp"
+            android:layout_height="125dp"
+            android:src="@drawable/louie"
+            android:padding="15dp"
+            android:layout_gravity="bottom|end"/>
+    </FrameLayout>
 
 </RelativeLayout>
